@@ -1,0 +1,227 @@
+body {
+    font-family: 'Arial', system-ui;
+    font-size: 16px; /* Adjusted font size */
+    line-height: 1.6; /* Adjusted line spacing */
+    margin: 0;
+    padding: 0;
+    background-color: #b3d9ff; /* Baby blue background color */
+    color: #000000; /* Navy blue text color */
+}
+
+header {
+    background-color: #1e3a8a; /* Dark blue background color */
+    color: #b3d9ff; /* White text color */
+    padding: 20px 40px;
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space out the header content */
+}
+
+nav a {
+    color: #ffffff; /* White text color */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav links horizontally */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e3a8a; /* Dark blue background color */
+    color: #ffffff; /* White text color */
+    font-size: 0.9em;
+    position: relative; /* Remove fixed position */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full width footer (optional) */
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the footer content */
+}
+
+.logo {
+    width: 100px; /* Increase the size */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+    margin-right: 20px; /* Add space between the logo and text */
+}
+
+h1 {
+    margin: 0; /* Remove extra space */
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    color: #b3d9ff; /* Dark blue color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.align-left {
+    margin-right: auto;
+}
+
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #1e3a8a; /* Dark blue background color */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* White background color */
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #1e3a8a; /* Dark blue text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.header-info {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 0.9em;
+    color: #ffffff; /* White text color */
+    line-height: 1.2; /* Decreased line spacing */
+}
+
+main {
+    padding: 20px;
+    background-color: #ffffff; /* White background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 8px;
+    color: #000000; /* Navy blue text color */
+}
+
+.linkedin-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0e76a8; /* LinkedIn blue */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-btn:hover {
+    background-color: #005582; /* Darker LinkedIn blue */
+}
+
+/* Footer Styling */
+.footer-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between image and button */
+}
+
+.footer-image {
+    width: 50px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    margin-right: 20px; /* Add space between the image and text */
+    float: left; /* Align image to the left */
+    padding: 10px; /* Add padding around the image */
+}
+
+.footer-button {
+    background-color: #0e76a8; /* Button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-button:hover {
+    background-color: #005582; /* Hover color */
+}
+
+.footer-linkedin {
+    display: none;
+}
+
+/* New class for the text box */
+.text-box {
+    margin: 20px auto;
+    text-align: left; /* Align text to the left */
+    max-width: 800px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-box img {
+    margin-right: 20px; /* Add space between the image and text */
+}
+
+.text-box p {
+    margin: 0;
+}
+
+/* New class for centering the header */
+.center-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* New class for side-by-side embeds */
+.embed-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.embed-container embed {
+    flex: 1;
+    height: 600px;
+}
+
+
