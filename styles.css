@@ -240,6 +240,20 @@ main {
     padding: 20px 0;
 }
 
+/* New class for title with logo */
+.title-with-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between the logo and the title */
+    margin-bottom: 20px;
+}
+
+.title-logo {
+    width: 50px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Media query for screens smaller than 768px (e.g., iPhones) */
 @media (max-width: 768px) {
     body {
