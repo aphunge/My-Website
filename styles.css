@@ -245,13 +245,15 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* Space between the logo and the title */
+    gap: 10px; /* Reduce space between the logo and the title */
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensure content wraps if it doesn't fit */
 }
 
 .title-logo {
-    width: 50px; /* Adjust logo size */
+    width: 40px; /* Adjust logo size to match text height */
     height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent the logo from shrinking */
 }
 
 .title-with-logo h2 {
@@ -259,6 +261,8 @@ main {
     line-height: 1.3; /* Maintain consistent spacing */
     margin: 0; /* Remove extra margins */
     text-align: center; /* Center the title */
+    flex-grow: 1; /* Allow the text to take up remaining space */
+    max-width: calc(100% - 50px); /* Ensure text doesn't overlap the logo */
 }
 
 /* Media query for screens smaller than 768px (e.g., iPhones) */
@@ -333,6 +337,20 @@ main {
 
     .dropdown-content {
         text-align: center; /* Center dropdown links */
+    }
+
+    .title-with-logo {
+        flex-direction: column; /* Stack the logo and title vertically */
+        gap: 5px; /* Reduce spacing for smaller screens */
+    }
+
+    .title-logo {
+        width: 30px; /* Further reduce logo size for smaller screens */
+    }
+
+    .title-with-logo h2 {
+        font-size: 1.2em; /* Adjust text size for smaller screens */
+        max-width: 100%; /* Allow text to use full width */
     }
 }
 
