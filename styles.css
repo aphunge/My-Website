@@ -240,4 +240,75 @@ main {
     padding: 20px 0;
 }
 
+/* Hide dropdown for larger screens *//* Media query for screens smaller than 768px (e.g., iPhones) */
+.mobile-menu {@media (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}    }        text-align: center;        display: block;    .mobile-menu {    }        cursor: pointer;        font-size: 24px;        border: none;        background: none;        display: block;    .hamburger-menu {@media (max-width: 768px) {/* Show hamburger menu for smaller screens */}    display: none;    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        line-height: 1.4; /* Adjust line spacing */
+    }
+
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0 auto 10px; /* Center the logo */
+    }
+
+    .header-info {
+        text-align: center; /* Center header info */
+        margin: 10px 0;
+    }
+
+    .dropdown {
+        margin-top: 10px; /* Add spacing for dropdown */
+    }
+
+    .text-container {
+        max-width: 90%; /* Reduce text width for smaller screens */
+        padding: 10px; /* Add padding for better readability */
+    }
+
+    .footer-image {
+        display: block; /* Ensure footer image stacks properly */
+        margin: 10px auto; /* Center footer image */
+    }
+
+    .linkedin-btn {
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+/* Remove hamburger menu styles */
+.hamburger-menu {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 
